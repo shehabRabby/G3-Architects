@@ -135,6 +135,7 @@ nav{
     border-left: 6px solid #FF900E;
     padding-left: 30px;
     font-size: 2.86rem;
+    margin-bottom: 30px;
 }
 
 .love-title{
@@ -192,6 +193,103 @@ nav{
 
 
 
+/* Some facts design */
+.feature-title3{
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 30px 10px;
+}
+
+.award-item{
+    height: 220px;
+    width: 242px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    text-align: center;
+    padding: 40px 30px 0px 30px;
+
+}
+
+.fact-head{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.description2{
+    margin-top: 10px;
+    width: 60%;
+}
+
+.award-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 50px 40px;
+  justify-items: center
+}
+.award-img{
+    width: 50px;
+   
+}
+.number{
+    color: #424242;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.award-title{
+    color: #727272;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+
+/* Sponser -section */
+.sponser-title{
+    justify-items: center;
+    text-align: center;
+}
+
+.companies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    padding-top: 40px;
+}
+
+.filters{
+    filter: grayscale(100%);
+}
+
+.companies-logo{
+    width: 150px;
+}
+
+
+
+
+/* footer */
+
+.feature-title4{
+    max-width: 80%;
+    margin: 40px auto;
+    background-color: #FFF4E7;
+}
+.footer-p{
+    color: #424242;
+    font-size: 1.25rem;
+    justify-items: center;
+    padding: 38px 400px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -231,10 +329,9 @@ nav{
 
 /* button */
 .common-btn{
-    background-color: rgba(6, 150, 234, 0.711);
-    color: black;
+    background-color: rgba(6, 150, 234, 0.761);
     font-size: .65rem;
-    padding: 5px 8px;
+    padding: 10px 15px;
     font-weight: 400;
 }
 
@@ -246,6 +343,7 @@ nav{
 .description{
     width: 100%;
 }
+
 .feature-img{
     gap: 10px;
     margin-top: -50px;
@@ -253,6 +351,51 @@ nav{
 
 /* girl-archtec */
 
+
+/* award */
+.award-container{
+  grid-template-columns: 1fr;
+  padding: 50px 0px;
+  gap: 20px;
+}
+
+.fact-head{
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.description2{
+    margin: 10px 0px;
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* sponsers-section */
+
+.companies{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.filters{
+    filter: grayscale(0%);
+}
+
+.companies-logo{
+    width: 100px;
+}
+#tele{
+   grid-column: span 2;
+}
+
+/* footer */
+.footer-p{
+    font-size: .55rem;
+    text-align: center;
+    padding: 10px 15px;
+}
 
 
 }
@@ -265,7 +408,7 @@ nav{
 
 
 /* large device */
-@media screen and (max-width:1200px){
+@media screen and (min-width:577px) and (max-width:1200px){
     nav{
     display: flex;
     flex-direction: column;
@@ -318,4 +461,49 @@ nav{
     margin-top: -50px;
 }
     
+/* facts */
+.award-container{
+  grid-template-columns: 1fr;
+  padding: 50px 0px;
+  gap: 20px;
+}
+
+.fact-head{
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.description2{
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* sponsers-section */
+.companies{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.filters{
+    filter: grayscale(0%);
+}
+
+.companies-logo{
+    width: 90px;
+}
+
+#tele{
+   grid-column: span 4;
+}
+
+
+/* footer */
+.footer-p{
+    font-size: .90rem;
+    text-align: center;
+    padding: 10px 15px;
+}
+
 }
